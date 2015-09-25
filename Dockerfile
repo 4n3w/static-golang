@@ -1,6 +1,3 @@
-FROM golang:1.4.2
+FROM golang:1.5
 
 ENV CGO_ENABLED 0
-
-# rebuild stdlib with native Go net package
-RUN go install -a -tags netgo std
